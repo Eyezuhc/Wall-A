@@ -6,14 +6,15 @@
 </p>
 
 
-Wall - A is an Arduino-based vehicle bot designed to track and move away from obstacles and slow down any incoming obstacles. This project implements the PID controller and PID code to adjust the speed of the vehicle. This project is developed for the subject Feedback and Control Systems. Paired and collaborated with Andrey Fritz Solijon. 
+Wall - A is an Arduino-based vehicle bot designed to track and move away from obstacles and slows down when there's incoming obstacles. This project implements the PID controller and PID code to adjust the speed of the vehicle. This project is developed for the subject Feedback and Control Systems. Paired and collaborated with Andrey Fritz Solijon. 
 
 ## Table of Contents
   - [Overview](#overview)
   - [Hardware Components](#hardware-components)
   - [Features](#features)
   - [Platform/Environment Setup](#platformenvironment-setup)
-  - [Usage](#usage) 
+  - [Usage](#usage)
+  - [License](#license)
 
 ## Overview
   Block Diagram
@@ -21,7 +22,7 @@ Wall - A is an Arduino-based vehicle bot designed to track and move away from ob
   Wall Avoidance or Obstacle Avoidance Robot also known as Wall-A is an Arduino-based project designed to slow down its speed based on the distance from the sensor to the obstacle. With the implementation of PID (Proportional, Integral, Derivative) controller. This controller uses real-time measurement through the use of sensors that adjust its speed based on the set point and the obstacles and learns to adjust the error based on multiple trials.
 ## Features
   - PID controller - precisely controls and adjusts its errors based on feedback through calculation of Kp(Proportional), Ki(Integral), Kd(Derivative).
-  - Feedback-based Speed Regulator - uses feedback from the sensor to adjust it speed.
+  - Feedback-based Speed Regulator - uses feedback from the sensor to adjust its speed.
   - Arduino-based - affordable and easy to replicate, customizable hardware.
 ## Hardware Components
 
@@ -35,13 +36,24 @@ Wall - A is an Arduino-based vehicle bot designed to track and move away from ob
   2. HRCS04 Ultrasonic Sensor
       - Sensor for real-time measurement and feedback.
   3. SG90 Servo Motor
-      - Rotates the head which contains the sensor and scans the environment
+      - Allows rotational movement of the head with the sensor and scanning of the environment
   4. L298N Motor Driver
-      -   
-  6. Power Supply (5V)
-  7. 2 Geared Motors
-  8. Wires and Connectors
-
+      - A driver for the motor wheels, enabling reverse and forward and dynamic control of speed
+  6. Power Supply (6V) 
+      - Power for the whole circuit and components
+  8. 2 Geared Motors
+      - Wheels for the movement of the robot
+  10. Wires and Connectors
+      - Ensure connection between the components and complete the circuit of the robot
 ## Platform/Environment Setup
+  - Visual Studio Code PlatformIO Extension
+    - Install PlatformIO Extension in Vscode. In this platform, you won't need the Arduino IDE application to upload your code to the Arduino Uno component.
+  - Arduino IDE (Optional)
+    - As an alternative of PlatformIO, install Arduino IDE application to upload your source code.
+    - Note: You cannot clone the repository directly in Arduino IDE. Instead, manually copy the provided source code
+  - Source Code
+    - 
 ## Usage
-## 
+  - Wall - A is used as a simulation in implementing PID controller and real-time feedback-based measurement of output (speed to be measured in this project). This simulation is a potential usage for cars, motorcycles, and any other vehicle in the street. This implementation and application of PID in road vehicles can significantly reduce accidents and damage over time. Though it's already existent in some vehicles but not yet really advertised worldwide.
+## License
+  - This project is under MIT License.
